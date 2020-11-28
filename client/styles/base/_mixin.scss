@@ -1,0 +1,277 @@
+@mixin coloring($from-color, $to-color, $col-no, $row-no) {
+    position: relative;
+
+    grid-column: span $col-no;
+    grid-row: span $row-no;
+    background: $from-color;
+
+    @keyframes color {
+        0% {
+            background: $from-color;
+        }
+
+        50% {
+            background: $to-color;
+        }
+
+        100% {
+            background: $from-color;
+        }
+    }
+
+    animation : color ease-in-out 2s infinite;
+}
+
+@mixin background($color, $url, $blend-mode) {
+    background: $color;
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: $blend-mode;
+
+
+}
+
+@mixin niceUnderLine {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: $white-color;
+    width: 100%;
+    transform-origin: right;
+    transition: transform ease 200ms;
+    transform: scale(0);
+}
+
+@mixin jumpingmethod($from, $to, $time, $delay) {
+    animation: jumping $time ease-in-out infinite;
+    animation-delay: $delay;
+    transform-origin: bottom;
+
+    @keyframes jumping {
+        0% {
+            transform: translateY($from) scale(100%);
+
+        }
+
+        50% {
+            transform: translateY(0) scale(25%);
+
+        }
+
+        75% {
+            transform: translateY($to) scale(50%);
+
+        }
+
+        100% {
+            transform: translateY(0) scale(0);
+        }
+    }
+
+}
+
+@mixin navabarToggle($y) {
+    transform: translate3d(0, $y, 0);
+    transition: 0.1s all ease-out;
+}
+
+//aib
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+@mixin quoteBg($w, $h) {
+    background-image: url("https://www.aib.edu.au/wp-content/themes/aib/assets/images/quote-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $w;
+    height: $h;
+}
+
+@mixin headerParagraph {
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: .9rem;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+}
+
+@mixin hyperlink {
+    color: $red-color;
+    transition: color ease-in-out 500ms;
+    text-transform: uppercase;
+
+    &:hover {
+        color: darken($red-color, 20%);
+    }
+}
+
+@mixin Enquire {
+    background: $red-color;
+    color: $white-color;
+    text-transform: uppercase;
+    padding: 0 20px;
+
+    &:hover {
+        background: darken($red-color, 15%);
+    }
+
+    a {
+        color: $white-color;
+    }
+}
+
+@mixin h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+@mixin flex($type:row, $justify:center, $align:center) {
+    display: flex;
+    flex-direction: $type;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin navbar {
+    ul {
+        display: flex;
+        height: 100%;
+
+        li {
+            margin: .3rem .4rem;
+
+            a {
+                color: $white-color;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+@mixin input {
+    padding: 5px;
+    border: 1px solid $dark-blue-color;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    background: lighten($dark-blue-color, 70%);
+}
+
+@mixin select {
+    @include input;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+@mixin warning {
+    color: rgb(222, 53, 11);
+    background-color: rgb(255, 189, 173);
+}
+
+@mixin ph4 {
+    h4 {
+        margin-bottom: 1rem;
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+    p {
+        margin-bottom: .6rem;
+        font-size: .6rem;
+        font-weight: 300;
+    }
+}
+
+@mixin buttonBlock($color) {
+    transition: all ease-in-out .3s;
+
+    i {
+        margin-right: .4rem;
+    }
+
+    &:hover {
+        background: darken($color, 4%)
+    }
+
+    color: $button-gray;
+    width:100%;
+    padding: .6rem;
+    cursor: pointer;
+    background: darken($color, 1%);
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+@mixin hoverBoxShadow {
+    box-shadow: rgb(179, 186, 197) 0px 4px 8px 0px, rgb(179, 186, 197) 0px 0px 1px 0px;
+}
+
+@mixin commonMoalSection {
+    position: absolute;
+    background: $white-color;
+    z-index: 21;
+    width: 80%;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(179, 186, 197) 0px 4px 8px 0px,
+        rgb(179, 186, 197) 0px 0px 1px 0px;
+
+    .modal-close {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}
+
+@mixin control-section {
+    flex-basis: calc(100% - 65px);
+}
+
+@mixin overflow-y {
+    max-height: 90vh;
+    overflow: auto;
+}

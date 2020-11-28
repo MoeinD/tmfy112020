@@ -1,0 +1,12 @@
+.create-component {
+    @include commonMoalSection;
+    padding: 3rem 2rem;
+    width: 600px;
+
+    .modal-close {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+}

@@ -1,0 +1,20 @@
+.projects-section{
+    margin: $main-section-margin;
+    .project-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .project-search{     
+        @include flex(null, flex-start);
+        &>div{
+            margin-right: 2rem;       
+        }
+        .search-input{
+            @include flex;
+
+        }
+        
+    }
+}

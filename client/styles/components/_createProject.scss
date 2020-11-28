@@ -1,0 +1,100 @@
+.create-project {
+    &.creat-project-only {
+        @include flex;
+
+        >div {
+            max-width: 430px;
+        }
+    }
+
+    &.template-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include commonMoalSection;
+
+    .template-select {
+        display: flex;
+        margin: .6rem 0;
+        align-items: flex-start;
+
+        img {
+            width: 30%;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: .4rem;
+        }
+
+        p {
+            font-size: .95em;
+            line-height: 1.4;
+            margin-bottom: .4rem;
+        }
+    }
+
+
+}
+
+
+
+.form-control {
+    display: flex;
+    margin: .6rem 0;
+    align-items: center;
+}
+
+.label-control {
+    flex-basis: 90px;
+    text-align: right;
+}
+
+.input-control {
+    @include input;
+    margin-left: .4rem;
+    @include control-section;
+}
+
+.template-selection {
+    position: fixed;
+    padding: 2rem;
+    width: 80%;
+
+    .template-selection-header {
+        border-bottom: .2px solid darken($gray-color, 10%);
+        @include flex(column, space-between, flex-start);
+        padding: 1rem 0;
+        height: 150px;
+    }
+
+    @include headerParagraph;
+}
+
+.select-section {
+    select {
+        background: lighten($dark-blue-color, 73%);
+        width: $select-width;
+        padding: .5rem .2rem;
+        font-size: 1rem;
+        appearance: none;
+        position: relative;
+        border: none;
+    }
+
+    position: relative;
+
+    i {
+        position: absolute;
+        left: calc(#{$select-width} - 1.4rem);
+        top: 6px;
+        z-index: 2;
+        font-size: 1.3rem;
+    }
+}
+
+.template-section {
+    flex-basis: 32%;
+}

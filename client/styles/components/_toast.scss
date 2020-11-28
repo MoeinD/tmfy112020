@@ -1,0 +1,30 @@
+.toast-section {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    text-align: center;
+    padding: .4rem 1rem;
+    color: $white-color;
+    border-radius: 3px;
+    background-color: $dark-green-color;
+    i.fa-close {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        cursor: pointer;
+    }
+
+    // &.successful {
+ //     background-color: $dark-green-color;
+ // }
+
+    &.warning {
+        background: $orange-color;
+    }
+
+    &.error {
+        background: $red-color;
+    }
+}

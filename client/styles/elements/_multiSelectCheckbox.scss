@@ -1,0 +1,65 @@
+.multi-select-checkbox{
+    position: relative;
+    .selected-list{
+        @include input; 
+        min-width: 12rem; 
+        padding: .3rem 3rem .3rem .3rem;
+        min-height: 2rem;
+        @include flex;
+        cursor: pointer;
+        position: relative;
+        ul{
+            @include flex;
+            height: 100%;
+            li{
+               a{
+                   @include flex;
+               }
+                i{
+                    font-size: .7rem;
+                    margin-left: .2rem;
+                    margin-top: .1rem;
+                }
+            }
+        }
+        label{
+            position: absolute;
+            left: 1rem;
+        }
+        &>i{
+            position: absolute;
+            font-size: 1.7rem;
+            right: .3rem;
+            &.close{
+                right: 1.6rem;
+                font-size: .8rem;
+                border-radius: 50%;
+                padding: .16rem;
+                background: lighten($dark-blue-color, 50%);
+                color: $white-color;
+                transition: all ease-in-out .5s;
+                &:hover{
+                    background: $dark-blue-color;
+                }
+            }
+        }
+    }
+    & >ul{        
+        position: absolute;
+        display: none;
+        @include input;
+        width: 100%;
+        padding-left: .2rem;
+        margin-top: .3rem;
+        &.show{
+            display: block;
+        }
+        li{
+            margin-bottom: .2rem;
+            @include flex(null, flex-start);           
+            label{
+              margin-left: .3rem;
+            }
+        }
+    }
+}

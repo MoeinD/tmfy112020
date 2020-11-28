@@ -1,0 +1,104 @@
+.backlog-main-area {
+    margin: 1rem 0;
+
+
+
+    .sprint-roolup-selected-ticket {
+        @include flex(null, null, flex-start);
+
+        &>div {
+
+
+            &:first-child {
+                flex-basis: 35%;
+            }
+
+            &:last-child {
+                flex-basis: 65%;
+                max-width: 53vw;
+            }
+
+            margin: 1rem 0;
+        }
+
+        .backlog-rollup-container {
+            min-height: 40vh;
+            height: calc(100vh - 13.5rem);
+            overflow: auto;
+
+            .rollup-section {
+                margin: .2rem 0;
+
+                .rollup-header {
+                    border: 1px solid $gray-color;
+                    background: linear-gradient(45deg, lighten($dark-blue-color, 69%), lighten($gray-color, 10%));
+                    padding: .5rem;
+                    transition: all ease-in-out 300ms;
+                    cursor: pointer;
+                    @include flex(null, space-between);
+
+                    &>div {
+                        @include flex;
+                    }
+
+                    &:hover {
+                        background: linear-gradient(45deg, lighten($dark-blue-color, 65%), lighten($gray-color, 5%));
+                    }
+
+                    .rollupIcon {
+                        transition: transform ease-in-out 300ms;
+
+                        &.active {
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                    .sprint-name {
+                        min-width: 7rem;
+                        margin-left: .2rem;
+                    }
+
+                    .sprint-issue-number {
+                        color: darken($gray-color, 40%);
+                        margin-left: .5rem;
+                    }
+                }
+
+                .rollup-internal {
+                    animation: slideTab ease-in-out 250ms;
+                    display: none;
+
+
+                    &.active {
+                        display: block;
+                    }
+
+                    .rollup-ticket-section {
+                        padding: .4rem;
+                        background: lighten($gray-color, 20%);
+                        margin: .2rem 0 .2rem .7rem;
+                        cursor: move;
+                        border: 1px solid $dark-blue-color;
+                        @include flex(null, space-between);
+                        transition: all ease-in-out 250ms;
+
+                        &>div {
+                            span {
+                                min-width: 3.5rem;
+                                display: inline-block;
+                                margin-left: .3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .selected-sprint-ticket {
+            align-self: flex-start;
+            animation: opacity ease-in-out 250ms;
+
+        }
+
+    }
+}

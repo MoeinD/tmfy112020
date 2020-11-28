@@ -1,0 +1,35 @@
+.people-main-section {
+    margin: $main-section-margin;
+
+    .people-section {
+        display: flex;
+        margin-top: 1rem;
+    }
+}
+
+.top-button-group {
+    @include flex(null, flex-end, null);
+
+}
+
+.search-section {
+    margin-top: $main-section-margin;
+    position: relative;
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $dark-blue-color;
+        padding: .2rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    i {
+        position: absolute;
+        right: .3rem;
+        font-size: 1.1rem;
+    }
+}

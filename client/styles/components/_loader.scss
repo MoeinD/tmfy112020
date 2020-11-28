@@ -1,0 +1,18 @@
+.loader-section{
+.loader{
+    position: absolute;
+    border: 1rem solid $gray-color;
+    border-bottom-color: $dark-blue-color;
+    border-top-color: $dark-blue-color;
+    width: 4rem;
+    height: 4rem;
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.overlay{
+    background: rgba(0, 0, 0, .1);
+}
+}

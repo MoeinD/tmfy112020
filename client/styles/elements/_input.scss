@@ -1,0 +1,38 @@
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    @include input;
+    padding-right: 25px;
+    padding-left: 5px;
+  }
+
+  i {
+    color: $dark-blue-color;
+    margin-left: -20px;
+    z-index: 2;
+  }
+
+  &.left-icon {
+    flex-direction: row-reverse;
+
+    i {
+      margin-right: -20px;
+    }
+
+    input {
+      padding-right: 5px;
+      padding-left: 25px;
+    }
+  }
+}
+
+.help-text {
+  opacity: .6;
+  font-style: italic;
+  font-size: 90%;
+  position: absolute;
+
+}

@@ -1,0 +1,57 @@
+.issue-container {
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    .issue-task-section {
+        max-height: calc(100vh - 11rem);
+        overflow: auto;
+    }
+
+    .task-issue {
+        cursor: pointer;
+
+        &:focus {
+            background: $light-blue-color;
+        }
+
+    }
+
+
+
+    .issue-details {
+        min-width: calc(100% - 250px);
+        animation: opacity ease-in-out 350ms;
+    }
+
+
+}
+
+.grid-header-buttons {
+    @include flex(null, flex-end);
+}
+
+.issue-comment-grid-area {
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.selected-task {
+    background: $light-blue-color !important;
+    border: 1px dashed $dark-blue-color !important;
+}
+
+.flagged-ticket {
+    background: lighten($flagged-color, 20%) !important;
+}
+
+.selected-flagged-ticket {
+    background: lighten($flagged-color, 15%) !important;
+}
+
+.flag-icon {
+    color: $orange-color;
+}
+
+.hide-input {
+    // color: $white-color;
+}

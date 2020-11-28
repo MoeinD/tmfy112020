@@ -1,0 +1,27 @@
+.tab-container {
+    @include flex(null, flex-start);
+    animation: slideTab ease-in-out 250ms;
+
+    .tab-display-name {
+        background-color: $light-blue-color;
+        margin: 2px 2px;
+        padding: .3rem 1.5rem;
+        cursor: pointer;
+        transition: all ease-in-out 250ms;
+
+        &.selecte-tab {
+            background-color: $dark-blue-color;
+            color: $white-color;
+        }
+    }
+}
+
+.tab-list-itmes {
+    border: 1px solid $dark-blue-color;
+    margin: -2px 1px 2px 2px;
+    padding: 1rem;
+    //animation: rotateab ease-in-out 350ms;
+    animation-delay: 300ms;
+    max-height: calc(100vh - 17rem);
+    overflow: auto;
+}

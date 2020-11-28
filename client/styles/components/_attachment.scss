@@ -1,0 +1,55 @@
+.attachment-icon {
+    font-size: 1.7rem !important;
+}
+
+.attachment-form-control {
+    display: flex;
+    align-items: flex-end;
+    margin: .6rem 0;
+}
+
+
+
+
+.attachment-main {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "attachment-icon attachment-data attachment-close"
+        "attachment-icon attachcment-porgress attachment-close ";
+    grid-template-columns: auto 94% auto;
+
+    .attahcment-icon {
+        grid-area: attachment-icon;
+        @include flex;
+    }
+
+    .attachment-data {
+
+        grid-area: attachment-data;
+        display: flex;
+        justify-content: space-between;
+
+        label.name {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 400px;
+        }
+
+
+    }
+
+    .attachment-close {
+        grid-area: attachment-close;
+        @include flex(null, flex-end, flex-end);
+        cursor: pointer;
+    }
+
+    .attachment-progressbar {
+        grid-area: attachcment-porgress;
+        border-bottom: 4px solid $dark-green-color;
+        transform-origin: left;
+        animation: progressbar ease-in-out 1s;
+    }
+
+}

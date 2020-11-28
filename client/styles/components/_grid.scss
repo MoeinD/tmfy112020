@@ -1,0 +1,70 @@
+.grid-container {
+    margin-top: 1rem;
+    max-width: 100%;
+    overflow: auto;
+
+    .grid-column {
+        display: grid;
+
+        //grid-template-columns: repeat(var(--colNum),minmax(300px,1fr));
+        .column-value {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .checkbox-column {
+            transition: all ease-in-out 300ms;
+            @include flex;
+        }
+    }
+
+    .grid-header {
+        font-size: .9rem;
+        font-weight: 200;
+
+        .header-cell {
+            border-bottom: 2px solid $gray-color;
+            padding: 0 .5rem .3rem .5rem;
+        }
+    }
+
+    .grid-row {
+        font-size: .9rem;
+        font-weight: 300;
+
+        .grid-cell {
+            padding: .5rem .4rem;
+            transition: all ease-in-out 300ms;
+        }
+
+        .grid-row-odd {
+            background: $gray-color;
+        }
+
+        &:hover>div {
+            background: $dark-blue-color !important;
+            color: $white-color;
+            cursor: pointer;
+        }
+
+        &.selected-row>div {
+            //background: lighten($dark-blue-color, 20%) !important;
+            //color: $white-color;
+            border: 1px dashed $dark-blue-color;
+            border-left: none;
+            border-right: none;
+            background: $light-blue-color;
+
+            &:first-child {
+                border-left: 1px dashed $dark-blue-color;
+            }
+
+            &:last-child {
+                border-right: 1px dashed $dark-blue-color;
+            }
+
+        }
+    }
+
+}

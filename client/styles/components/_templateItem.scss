@@ -1,0 +1,27 @@
+.template-item {
+    margin: .5rem;
+    transition: all ease-in-out .3s;
+    flex-basis: 30%;
+    cursor: default;
+
+    .template-img {
+        @include flex;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        img {
+            width: 44%;
+        }
+    }
+
+    @include headerParagraph;
+
+    h3 {
+        font-size: 1.1rem !important;
+        font-weight: 400 !important;
+    }
+
+    &:hover {
+        @include hoverBoxShadow;
+    }
+}

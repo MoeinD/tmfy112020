@@ -1,0 +1,77 @@
+.tmfy-modal {
+    width: 410px;
+    height: 40%;
+}
+
+.tmfy-modal-header {
+    display: flex;
+    justify-content: space-between;
+
+    .tmfy-title {
+        font-size: 1.3rem;
+    }
+}
+
+.time-tacking-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-tacking-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+    margin-left: .5rem;
+}
+
+.time-tracker-holder {
+    height: 30px;
+}
+
+.time-tracker-container {
+    display: grid;
+    grid-template-areas: "time-tracker-icon time-tracker-bar"
+        "time-tracker-icon time-tracker-result ";
+    grid-template-columns: 25px auto;
+    grid-gap: 2px;
+    margin: 0 .5rem;
+
+    .time-tracker {
+        grid-area: time-tracker-bar;
+        display: flex;
+
+        .time-tracker-spend {
+            border-bottom: .5rem solid $dark-blue-color !important;
+            flex-basis: 100%;
+            transition: all ease-in-out 300ms;
+            border-radius: 3px 0px 0px 3px;
+        }
+
+        .time-tracker-remain {
+            border-bottom: .5rem solid darken($gray-color, 13%);
+            flex-basis: 0%;
+            transition: all ease-in-out 300ms;
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
+
+    .timer-icon {
+        grid-area: time-tracker-icon;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .time-tracking-result {
+        grid-area: time-tracker-result;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.input-control-tracking {
+    @include input;
+    width: calc(100% - .5rem);
+}

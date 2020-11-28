@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 144 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>template/thumbnail/content-management</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="120" height="80" rx="3"></rect>
+        <rect id="path-3" x="0" y="0" width="104" height="72" rx="3"></rect>
+        <linearGradient x1="82.1401785%" y1="-16.2124912%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#F1F2F4" offset="0%"></stop>
+            <stop stop-color="#C1C7D0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="template/thumbnail/content-management" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="template-thumbnail_content-management" transform="translate(12.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="BG" fill="#CFD3DB" xlink:href="#path-1"></use>
+            <g id="BG" mask="url(#mask-2)">
+                <g transform="translate(16.000000, 8.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="content" stroke="none" fill="#CFD3DB" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path d="M126,14.378024 C112.103225,3.39205981 61.5,7.37802396 32,20.378024 C2.5,33.378024 -34,17.878024 -34,17.878024 L-23.5,80.378024 L106,78.878024 C106,78.878024 139.896775,25.3639881 126,14.378024 Z" id="Path-6" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd" mask="url(#mask-4)"></path>
+                    <rect id="Rectangle-13" stroke="none" fill="#FFFFFF" fill-rule="evenodd" mask="url(#mask-4)" x="11" y="8" width="80" height="56" rx="2"></rect>
+                    <path d="M16,20.5 C16,20.2238576 16.2159892,20 16.4941406,20 L59.5058594,20 C59.7787657,20 60,20.2319336 60,20.5 C60,20.7761424 59.7840108,21 59.5058594,21 L16.4941406,21 C16.2212343,21 16,20.7680664 16,20.5 Z M16,23.5 C16,23.2238576 16.2159892,23 16.4941406,23 L59.5058594,23 C59.7787657,23 60,23.2319336 60,23.5 C60,23.7761424 59.7840108,24 59.5058594,24 L16.4941406,24 C16.2212343,24 16,23.7680664 16,23.5 Z M16,26.5 C16,26.2238576 16.2207219,26 16.497793,26 L39.3355403,26 C39.6104638,26 39.8333333,26.2319336 39.8333333,26.5 C39.8333333,26.7761424 39.6126115,27 39.3355403,27 L16.497793,27 C16.2228695,27 16,26.7680664 16,26.5 Z" id="Combined-Shape" stroke="none" fill-opacity="0.129999995" fill="#091E42" fill-rule="evenodd" mask="url(#mask-4)"></path>
+                    <rect id="Rectangle-13-Copy-6" stroke="none" fill="#DFE2E7" fill-rule="evenodd" mask="url(#mask-4)" x="16" y="14" width="44" height="4"></rect>
+                    <rect id="Rectangle-13-Copy-10" stroke="none" fill="#DFE2E7" fill-rule="evenodd" mask="url(#mask-4)" x="26" y="54" width="34" height="4"></rect>
+                    <rect id="Rectangle-13-Copy-11" stroke="none" fill="#B3BAC5" fill-rule="evenodd" mask="url(#mask-4)" x="16" y="53" width="6" height="6" rx="3"></rect>
+                    <g id="Group-11" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-4)">
+                        <g transform="translate(16.000000, 30.000000)">
+                            <rect id="Rectangle-13-Copy-12" fill="#FFC400" x="0" y="0" width="44" height="18"></rect>
+                            <circle id="Oval-4" fill="#FFFFFF" cx="8" cy="7" r="3"></circle>
+                            <polygon id="Path-5-Copy" fill="#253858" points="17 18 28.8337041 6 41 18"></polygon>
+                            <polygon id="Path-5" fill="#0065FF" points="11 18 19.283389 9 28.2686958 18"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <rect id="sidenav" fill="#0065FF" mask="url(#mask-2)" x="0" y="0" width="16" height="80"></rect>
+            <g id="top" mask="url(#mask-2)">
+                <rect id="Rectangle-26-Copy-2" fill="#DFE1E6" x="0" y="0" width="120" height="8"></rect>
+                <circle id="Oval-9" fill="#FF5630" cx="4" cy="4" r="2"></circle>
+                <circle id="Oval-9-Copy" fill="#FFC400" cx="10" cy="4" r="2"></circle>
+                <circle id="Oval-9-Copy-2" fill="#0065FF" cx="16" cy="4" r="2"></circle>
+            </g>
+            <rect id="Rectangle-26" fill="#0065FF" mask="url(#mask-2)" x="82" y="22" width="15" height="4" rx="2"></rect>
+            <g id="Group-8" mask="url(#mask-2)">
+                <g transform="translate(82.000000, 29.000000)">
+                    <rect id="Rectangle-26-Copy" fill="#B3BAC5" x="0" y="0" width="5" height="5" rx="2.5"></rect>
+                    <rect id="Rectangle-26-Copy-3" fill="#DFE2E7" x="8" y="2" width="8" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+            <g id="Group-8-Copy" mask="url(#mask-2)">
+                <g transform="translate(82.000000, 37.000000)">
+                    <rect id="Rectangle-26-Copy" fill="#B3BAC5" x="0" y="0" width="5" height="5" rx="2.5"></rect>
+                    <rect id="Rectangle-26-Copy-3" fill="#DFE2E7" x="8" y="2" width="8" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+            <g id="Group-8-Copy-2" mask="url(#mask-2)">
+                <g transform="translate(82.000000, 45.000000)">
+                    <rect id="Rectangle-26-Copy" fill="#B3BAC5" x="0" y="0" width="5" height="5" rx="2.5"></rect>
+                    <rect id="Rectangle-26-Copy-3" fill="#DFE2E7" x="8" y="2" width="8" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+.create-tiket-modal {
+    @include commonMoalSection;
+    width: 60%;
+    min-width: 800px;
+    padding: 2rem;
+    max-width: 1100px;
+    @include overflow-y;
+}
+
+.create-ticket {
+    .form-control-relative {
+        position: relative;
+    }
+
+    .form-control {
+        margin: 1.2rem 0;
+
+        .input-control-ticket {
+            @include input;
+            position: relative;
+        }
+
+        .ticket-select {
+            select {
+                @include select;
+                min-width: 250px;
+            }
+        }
+    }
+}
+
+.drop-section {
+    border: .01rem dashed rgba($dark-blue-color, .5);
+    @include control-section;
+    min-height: 40px;
+    @include flex;
+
+}
+
+.ticket-button-group {}

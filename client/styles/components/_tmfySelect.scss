@@ -1,0 +1,54 @@
+.tmfy-select {
+    min-width: $select-min-width;
+    background: $gray-color;
+    border-radius: 2px;
+    border: 1px solid $dark-blue-color;
+    padding: 2px;
+    position: relative;
+    min-height: 1.5rem;
+
+    .selected-item {
+        padding: 1px 3px;
+        @include flex(null, flex-start);
+    }
+
+    i.select-arrow {
+        position: absolute;
+        right: 3px;
+    }
+
+    i.option {
+        margin-right: .5rem;
+    }
+
+    .tmfy-options {
+        z-index: 5;
+        position: absolute;
+        top: 1.5rem;
+        @include hoverBoxShadow;
+        min-width: $select-min-width;
+        padding: 3px 0;
+        left: 0;
+        background-color: $white-color;
+
+        .tmfy-option {
+            cursor: pointer;
+            padding: 3px 4px;
+            transition: all ease-in-out .34s;
+
+            &:hover {
+                background-color: $gray-color;
+            }
+        }
+    }
+}
+
+.sub-section {
+    border: none;
+    cursor: pointer;
+
+    .tmfy-options {
+        right: 0 !important;
+        left: auto;
+    }
+}

@@ -1,0 +1,45 @@
+.navbar-modal {
+    top: 1.6rem;
+    position: absolute;
+    min-width: 200px;
+    background: $white-color;
+    z-index: 6;
+    min-height: 200px;
+    max-height: 300px;
+    color: $button-gray;
+    overflow: auto;
+    transition: all ease-in-out .3s;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .3);
+    padding: 1rem 0;
+
+    .recent-section {
+
+
+        h4 {
+            padding: .7rem .8rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+
+    .navbar-modal-item {
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+        padding: .5rem 1.3rem;
+
+        &:hover {
+            background: $gray-color;
+        }
+    }
+
+    >button {
+        @include buttonBlock($white-color);
+    }
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid $gray-color;
+    margin: .5rem 0;
+}

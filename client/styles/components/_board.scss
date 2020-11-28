@@ -1,0 +1,69 @@
+.project-container {
+    padding: 2rem;
+    flex-basis: calc(100% - #{$sidebar-width});
+
+    .board-header {
+        p {
+            margin: .4rem 0;
+        }
+
+        h3 {
+            margin-bottom: 1.1rem;
+        }
+    }
+}
+
+.task-section {
+    display: flex;
+    justify-content: space-between;
+
+
+    .task-common {
+        margin: 0 1rem 0 0;
+        background: $gray-color;
+        flex-basis: 100%;
+        border-radius: 2px;
+        padding: .5rem;
+        border: 2px dashed transparent;
+        transition: all ease-in-out 200ms;
+
+
+        h4 {
+            font-size: .8rem;
+            font-weight: 300;
+            margin: 1rem .5rem;
+            text-transform: uppercase;
+        }
+
+        .task-create {
+
+            input {
+                display: block;
+                width: 100%;
+                @include input;
+                padding: .5rem;
+
+            }
+
+            >button {
+                @include buttonBlock($gray-color);
+            }
+
+
+
+
+            .button-area {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+    .dragging {
+        border-color: $green-blue-color;
+    }
+}
+
+.dragover {
+    background: $light-green-color !important;
+    border: 1px dotted $green-color !important;
+}

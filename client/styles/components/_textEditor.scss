@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    margin-left: .7rem;
+
+    .fieldset {
+        background-color: #f2f2f2;
+        border: none;
+        padding: .3rem .1rem;
+        display: flex;
+        align-items: center;
+
+        button {
+            color: $black-color;
+            margin: 0 .05rem;
+            outline: none;
+            border: none;
+            padding: .4rem .5rem;
+            transition: all ease-in-out .2s;
+            cursor: pointer;
+            border-radius: 2px;
+
+            &:hover {
+                background: darken($gray-color, 10%);
+            }
+        }
+
+        select {
+            @include select;
+        }
+
+        .color {
+            margin: 0 .5rem;
+        }
+    }
+
+    .editor {
+        border: 1px solid grey;
+        min-height: 100px;
+        width: 100%;
+        margin: 0px auto 0;
+        padding: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+
+        ul,
+        ol {
+            margin-left: 1rem;
+        }
+    }
+
+}

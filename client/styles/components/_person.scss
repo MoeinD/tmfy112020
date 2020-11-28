@@ -1,0 +1,32 @@
+.person-section{
+    border: 1px solid $gray-color;
+    margin-right: .4rem;
+    padding: 1rem;  
+    height: 10rem;
+    align-items: center;
+    border-radius: .3rem;
+    width: 9rem;
+    @include flex(column, flex-start);
+    box-shadow: 1px  rgba(0, 0, 0, .5);
+    transition: all ease .3s;    
+    transform-origin: top center;
+    cursor: pointer;
+    perspective: 400px;
+    &:hover{
+        // transform: translate(1px,1px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+   // transform: rotate3d(0, .6, 1, 1deg);
+    //transform: rotate3d(2, -1, -1, -0.2turn);
+    }
+   
+    .image-section{
+        background: $dark-blue-color;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        color: $white-color;
+        @include flex;       
+        margin-bottom: 1rem;        
+    }
+  @include ph4;
+}
