@@ -145,10 +145,6 @@ export default mixins(commonMethod).extend({
 
   methods: {
     saveTicketLocaly(assignObject) {
-      console.log(
-        "this is the new object assign for updaing or adding the ticket ",
-        assignObject
-      );
       this.ticketInfo = Object.assign(this.ticketInfo, assignObject);
       this.setCommonInformation({
         lastUpdateTicket: this.createDeepCopyOfObject(this.ticketInfo)
