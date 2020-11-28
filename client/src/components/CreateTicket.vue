@@ -186,7 +186,6 @@ export default mixins(commonMethod).extend({
     },
 
     saveTicket() {
-      console.log("saveing the ticket ", this.ticketInfo);
       this.saveTicketCommon(
         Object.assign(this.ticketInfo, {
           id: this.createUUID(),
@@ -278,7 +277,6 @@ export default mixins(commonMethod).extend({
       this.setCommonInformation({
         lastUpdateTicket: this.createDeepCopyOfObject(this.ticketInfo)
       });
-      console.log("this is the ticket info ", this.ticketInfo);
       /**we need to fetch the comments from the db as well
        * and then we can use it for updating if we want to
        */

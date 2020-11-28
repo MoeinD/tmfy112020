@@ -176,12 +176,6 @@ export default Vue.extend({
     },
     /**create sub task  */
     [mockupData.CREATE_SUB_TASK](selectedObject) {
-      console.log(
-        "this is the selected task for creating the sub task ",
-        selectedObject,
-        this.currentOrFirstProject,
-        this.getTaskSectionList(this.currentOrFirstProject)[0].id
-      );
       const firstTaskStage = this.getTaskSectionList(
         this.currentOrFirstProject
       )[0].id;
@@ -408,7 +402,6 @@ export default Vue.extend({
       this.setModalInfo({ show: true, gridId: gridId });
     },
     saveTicketCommon(currentIssue) {
-      console.log("this is the current ticket info to be added ", currentIssue);
       if (this._id("descriptionEditor")) {
         const description = this._id("descriptionEditor").innerHTML;
         localStorage.setItem("description", description);
@@ -480,7 +473,6 @@ export default Vue.extend({
     },
     /**addOrUpdateNewItem */
     addOrUpdateItemInStoreAndLS(key, obj) {
-      console.log("this is he key and objj for adding the new one  ", key, obj);
       /**add or update the new obj to the store */
 
       if (this.IsObjectNotEmpty(obj))
@@ -565,7 +557,6 @@ export default Vue.extend({
       return obj.constructor === Object ? Object.keys(obj).length > 0 : false;
     }, //select target
     selectTarget(row, fillContainer, targetName = "board") {
-      console.log("this is the row that we have been selected ", row);
       this.setCommonInformation({
         lastTarget: row
       });
@@ -861,7 +852,7 @@ then close all select boxes: */
           fillContainer: mockupData.PROJECTS_NAME,
           target: routeParams.id
         });
-        console.log("this is the current project in local", localproject);
+
         if (!localproject)
           this.fetchingProject({
             fillContainer: mockupData.PROJECTS_NAME,
@@ -870,24 +861,6 @@ then close all select boxes: */
       }
     }
   },
-  // asyncComputed: {
-  //   async currentProject1() {
-  //     let result = await this.fetchContainer({
-  //       fillContainer: mockupData.PROJECTS_NAME,
-  //       target: this.$route.params.id
-  //     });
-
-  //     console.log("this is the current project ", result);
-
-  //     if (result.length > 0) {
-  //       this.setCommonInformation({
-  //         currentProject: Object.assign({}, result[0])
-  //       });
-  //       return result[0];
-  //     }
-  //     return null;
-  //   }
-  // },
   computed: {
     ...mapGetters({
       getContainerLocal: types.GET_CONTAINER_LOCAL,
