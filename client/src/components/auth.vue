@@ -1,5 +1,18 @@
 <template>
-  <div>auth</div>
+  <div>
+    <div class="modal-common auth">
+      <div class="aut-content">
+        <div class="form-control">
+          <input type="text" class="auth-input-control" placeholder="email" />
+        </div>
+        <div class="form-control">
+          <input type="password" class="auth-input-control" placeholder="password" />
+        </div>
+        <button class="button aut-botton">login</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
 </template>
 <script>
 import Vue from "vue";

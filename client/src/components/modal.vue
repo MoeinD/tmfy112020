@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="modal">
+    <div class="modal modal-common">
       <div class="modal-header">
         <i class="fa fa-close" @click="cancelMethod"></i>
       </div>
