@@ -124,12 +124,14 @@
 }
 
 @mixin hyperlink {
-    color: $red-color;
+    color: $hyperlink-color;
     transition: color ease-in-out 500ms;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:hover {
-        color: darken($red-color, 20%);
+        color: darken($hyperlink-color, 20%);
+        text-decoration: underline;
     }
 }
 

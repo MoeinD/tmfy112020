@@ -14,18 +14,32 @@
 
         .auth-input-control {
             width: 100%;
-            padding: .7rem .3rem;
+            padding: .8rem .3rem;
             border: none;
             box-shadow: none;
             border-radius: 2px;
             background: $gray-color;
-            opacity: .8;
+            opacity: .7;
         }
 
         .aut-botton {
             width: 100%;
-            padding: .7rem .3rem;
+            padding: .8rem .3rem;
             text-transform: uppercase;
+        }
+
+        .auth-footer {
+            margin-top: .4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .6rem .2rem;
+
+            .auth-ask {
+                color: $dark-blue-color;
+                opacity: .5;
+                margin-right: .2rem;
+            }
         }
     }
 }

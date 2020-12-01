@@ -61,3 +61,7 @@ ul {
   right: 0;
   bottom: 0;
 }
+
+.hyperlink {
+  @include hyperlink;
+}

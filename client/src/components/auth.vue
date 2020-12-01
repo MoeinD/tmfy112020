@@ -9,6 +9,10 @@
           <input type="password" class="auth-input-control" placeholder="password" />
         </div>
         <button class="button aut-botton">login</button>
+        <div class="auth-footer">
+          <label class="auth-ask">Not registered?</label>
+          <label for class="hyperlink">Create an account</label>
+        </div>
       </div>
     </div>
     <div class="overlay"></div>
