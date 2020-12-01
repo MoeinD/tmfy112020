@@ -34,6 +34,7 @@ import ToggleIconDropDownItem from './components/ToggleIconDropDownItem.vue';
 import TmfyModal from './components/TmfyModal.vue';
 import TimeTrackingBar from './components/TimeTrackingBar.vue';
 import SubTask from './components/SubTask.vue';
+import auth from './components/auth.vue';
 import InputFacade from 'vue-input-facade';
 
 import AsyncComputed from 'vue-async-computed';
@@ -75,6 +76,7 @@ Vue.component('ToggleIconDropDownItem', ToggleIconDropDownItem);
 Vue.component('TmfyModal', TmfyModal);
 Vue.component('TimeTrackingBar', TimeTrackingBar);
 Vue.component('SubTask', SubTask);
+Vue.component('auth', auth);
 
 Vue.filter('datetime', (value) => {
   var timestamp = Date.parse(value);
