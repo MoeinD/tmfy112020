@@ -1,11 +1,15 @@
 .auth {
-    height: 250px;
+    height: 350px;
     width: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: $white-color;
     @include hoverBoxShadow;
+
+    &.login {
+        height: 260px;
+    }
 
     .aut-content {
         width: 100%;
