@@ -3,7 +3,7 @@
     <create-project v-if="getCommonInformation().showProjectModal"></create-project>
     <create-ticket v-if="getCommonInformation().showTicketModal"></create-ticket>
     <create-component v-if="getCommonInformation().showComponentModal"></create-component>
-    <auth></auth>
+    <!-- <auth></auth> -->
     <toast></toast>
     <navbar></navbar>
     <modal v-if="getModalInfo.show" :cancelMethod="callingCloseModal" :deletePrompt="deletePrompt"></modal>

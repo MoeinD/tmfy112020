@@ -136,7 +136,7 @@ const mutations = {
                     }
                     item.Row.map(itemRow => {
                         var rowExist = false;
-                        container.Row.map((containerRow, index) => {
+                        (container.Row || []).map((containerRow, index) => {
                             if (containerRow.id === itemRow.id) {
                                 rowExist = true;
                                 containerRow = Object.assign(containerRow, itemRow);
@@ -146,7 +146,7 @@ const mutations = {
                             }
                         })
                         if (!rowExist) {
-                            container.Row.push(itemRow);
+                            (container.Row || []).push(itemRow);
                         }
                     })
                 }

@@ -54,6 +54,7 @@ const mutations = {
   },
   login: (state, response) => {
     //  console.log('this is the login mutation ', response)
+    state.user = response;
   }
 }
 

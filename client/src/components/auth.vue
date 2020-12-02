@@ -16,7 +16,10 @@
         <div class="form-control">
           <input type="password" class="auth-input-control" placeholder="password" />
         </div>
-        <button class="button aut-botton" @click="login()">{{isloginModal ? `login` : 'signup'}}</button>
+        <button
+          class="button aut-botton"
+          @click="loginOrSignup()"
+        >{{isloginModal ? `login` : 'signup'}}</button>
         <div class="auth-footer">
           <label class="auth-ask">{{isloginModal ? 'Have an account' : 'Not registered?'}}</label>
           <label
@@ -50,6 +53,10 @@ export default mixins(commonMethod).extend({
   methods: {
     toggleToRegister() {
       this.isloginModal = !this.isloginModal;
+    },
+    /**Login for signup */
+    loginOrSignup() {
+      console.log("we are going to login or signup ");
     }
   }
 });
