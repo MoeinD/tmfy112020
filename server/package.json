@@ -4,8 +4,7 @@
   "description": "full stack application using vue node and express and mongodb",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "nodemon index.js"
   },
   "author": "Mohammad",
   "license": "ISC",
