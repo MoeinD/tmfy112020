@@ -14,7 +14,7 @@ const router = new Router({
       component: () => import('./components/Projects.vue'),
       name: 'projects',
       meta: {
-        requiresAuth: true
+        requiresAuth: false
       }
 
     }
