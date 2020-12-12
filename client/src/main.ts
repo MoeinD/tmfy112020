@@ -97,7 +97,8 @@ Vue.filter('customFitler', (value) => {
 
 
 
-import "font-awesome/css/font-awesome.css";
+//import "font-awesome/css/font-awesome.css";
+import '../node_modules/font-awesome/css/font-awesome.css';
 import router from "./router";
 
 
