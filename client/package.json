@@ -10,7 +10,7 @@
     "test": "npm run lint && npm run test:unit"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "file-loader": "^3.0.1",
     "font-awesome": "^4.7.0",
     "moment": "^2.27.0",
